@@ -4,6 +4,8 @@
 	--color-accent: #ff3400;
 	--color-headings: #1b0760;
 	--color-body: #918ca4;
+	--color-border: #ccc;
+	--border-radius: 30px;
 }
 
 *,
@@ -97,7 +99,7 @@ a {
 /* Badges--------------------------------------------------------------Start*/
 
 .badge {
-	border-radius: 20px;
+	border-radius: var(--border-radius);
 	padding: 0.5rem 2rem;
 	font-weight: 600;
 	white-space: nowrap;
@@ -183,7 +185,7 @@ a {
 	padding: 2rem 3rem;
 	text-transform: uppercase;
 	border: 0;
-	border-radius: 30px;
+	border-radius: var(--border-radius);
 	outline: 0;
 	cursor: pointer;
 	white-space: nowrap;
@@ -241,3 +243,40 @@ a {
 		font-size: 1.5rem;
 	}
 }
+/* Button----------------------------------------------------------------End*/
+/* Input----------------------------------------------------------------Start*/
+.input {
+	padding: 1.5rem 3.5rem;
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	outline: 0;
+	color: var(--color-headings);
+	font-size: 2rem;
+}
+
+::placeholder {
+	color: #cdcbd7;
+}
+
+.input-group {
+	border: 1px solid var(--color-border);
+	border-radius: var(--border-radius);
+	display: flex;
+}
+
+.input-group .input {
+	border: 0;
+	flex-grow: 1;
+}
+
+.input-group .input {
+	margin: 4px;
+	padding: 1.5rem 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.input {
+		font-size: 1.5rem;
+	}
+}
+/* Input----------------------------------------------------------------End*/
