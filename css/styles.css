@@ -1,3 +1,10 @@
+.bg-chienergizer {
+	background: url('../images/css-sprite-combined.png') 0px 0px;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
 :root {
 	--color-primary: #2584ff;
 	--color-secondary: #00d9ff;
@@ -118,6 +125,7 @@ a {
 
 .badge--small {
 	font-size: 1.6rem;
+	padding: 0.5rem 1.5rem;
 }
 
 @media screen and (min-width: 1024px) {
@@ -280,3 +288,93 @@ a {
 	}
 }
 /* Input----------------------------------------------------------------End*/
+/* Card----------------------------------------------------------------Start*/
+.card {
+	border-radius: 7px;
+	box-shadow: 0 0 20px 10px #f3f3f3;
+	overflow: hidden;
+}
+
+.card__header,
+.card__body {
+	padding: 2rem 2rem;
+}
+
+.card--primary .card__header {
+	background-color: var(--color-primary);
+	color: white;
+}
+
+.card--secondary .card__header {
+	background-color: var(--color-secondary);
+	color: white;
+}
+/* Card----------------------------------------------------------------End*/
+/* Plans---------------------------------------------------------------Start*/
+.plan {
+	position: relative;
+}
+
+.plan__name {
+	color: #fff;
+	margin: 0;
+	font-weight: 500;
+	font-size: 2.4rem;
+}
+
+.plan__price {
+	font-size: 6rem;
+}
+
+.plan__billing-cycle {
+	font-size: 2.4rem;
+	font-weight: 300;
+	margin-right: 1rem;
+}
+
+.card--secondary .badge--secondary {
+	background-color: #02cdf1;
+}
+
+.plan__description {
+	font-size: 2rem;
+	font-weight: 300;
+	letter-spacing: 1px;
+	display: block;
+}
+
+.plan .list__item {
+	letter-spacing: 1px;
+	margin-bottom: 2rem;
+}
+
+.plan .list {
+	padding-left: 2rem;
+}
+
+.plan .plan__popular {
+	position: absolute;
+	width: 6rem;
+	height: 6rem;
+	top: 2rem;
+	right: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+	.plan__name {
+		font-size: 1.4rem;
+	}
+
+	.plan__price {
+		font-size: 5rem;
+	}
+
+	.plan__billing-cycle {
+		font-size: 1.6rem;
+	}
+
+	.plan__description {
+		font-size: 1.7rem;
+	}
+}
+/* Plans---------------------------------------------------------------End*/
