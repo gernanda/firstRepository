@@ -326,12 +326,13 @@ a {
 	color: white;
 }
 
-@media screen and (min-width: 1024px) {
-	.card {
+@media screen and (min-width: 1240px) {
+	.card--testimonial {
 		margin-left: 10rem;
 		margin-right: 10rem;
 	}
 }
+
 /* Card----------------------------------------------------------------End*/
 /* Plans---------------------------------------------------------------Start*/
 .plan {
