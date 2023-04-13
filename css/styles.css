@@ -650,3 +650,42 @@ a {
 	transform: translate(200px);
 }
 /* Collapsible----------------------------------------------------End*/
+/* Block----------------------------------------------------Start*/
+.block {
+	--padding-vertical: 6rem;
+	padding: var(--padding-vertical) 3rem;
+}
+
+.block__header {
+	text-align: center;
+}
+
+.block__title {
+	margin-top: 0;
+}
+
+.block--parallel {
+	padding-top: calc((var(--padding-vertical)) + 4rem);
+	padding-bottom: calc((var(--padding-vertical)) + 4rem);
+	clip-path: polygon(0 11%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+.block--trapezoid {
+	padding-top: calc((var(--padding-vertical)) + 4rem);
+	padding-bottom: calc((var(--padding-vertical)) + 4rem);
+	clip-path: polygon(0 0, 100% 9%, 100% 91%, 0% 100%);
+}
+
+.block--black {
+	background: black;
+	color: white;
+}
+
+.block--black .block__title {
+	color: white;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
