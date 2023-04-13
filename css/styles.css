@@ -616,3 +616,37 @@ a {
 	}
 }
 /* Callout--------------------------------------------------------End*/
+/* Collapsible----------------------------------------------------Start*/
+.collapsible__header {
+	display: flex;
+	align-items: center;
+}
+
+.collapsible__title {
+	margin-top: 0;
+	font-size: 3rem;
+}
+
+.collapsible__icon {
+	transform: rotate(-90deg);
+	margin-left: 3rem;
+	transition: transform 1s;
+}
+
+.collapsible__content {
+	max-height: 0;
+	overflow: hidden;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.collapsible--expand .collapsible__content {
+	max-height: 50vh;
+	opacity: 1;
+}
+
+.collapsible--expand .collapsible__icon {
+	transform: rotate(0);
+	transform: translate(200px);
+}
+/* Collapsible----------------------------------------------------End*/
