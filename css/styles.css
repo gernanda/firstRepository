@@ -6,10 +6,10 @@
 }
 
 :root {
-	--color-primary: #2584ff;
+	--color-primary: #1c77ef;
 	--color-secondary: #00d9ff;
 	--color-accent: #ff3400;
-	--color-headings: #1b0760;
+	--color-headings: #0f0337;
 	--color-body: #918ca4;
 	--color-body-darker: #5c5577;
 	--color-border: #ccc;
@@ -122,6 +122,11 @@ a {
 
 .badge--secondary {
 	background-color: var(--color-secondary);
+	color: #fff;
+}
+
+.badge--primary-darker {
+	background-color: #1250a2;
 	color: #fff;
 }
 
@@ -253,6 +258,16 @@ a {
 	background-color: #8f2005;
 }
 
+.btn--heading {
+	background-color: var(--color-headings);
+	color: white;
+	transition: background-color 1s;
+}
+
+.btn--heading:hover {
+	background-color: var(--color-primary);
+}
+
 .btn--block {
 	width: 100%;
 	display: inline-block;
@@ -267,10 +282,11 @@ a {
 	color: var(--color-headings);
 	background: white;
 	border: 2px solid var(--color-headings);
+	transition: background-color 1s;
 }
 
 .btn--outline:hover {
-	background: var(--color-headings);
+	background-color: var(--color-headings);
 	color: white;
 }
 
@@ -330,6 +346,11 @@ a {
 
 .card--secondary .card__header {
 	background-color: var(--color-secondary);
+	color: white;
+}
+
+.card--tertiary .card__header {
+	background-color: var(--color-headings);
 	color: white;
 }
 
@@ -477,6 +498,8 @@ a {
 
 .grid {
 	display: grid;
+	justify-items: center;
+	align-items: center;
 }
 
 .grid__box-one {
@@ -811,3 +834,54 @@ a {
 	}
 }
 /* Domain---------------------------------------------------End*/
+/* Card Block-----------------------------------------------Start*/
+
+.card-one {
+	width: 90%;
+	padding: 4rem;
+}
+
+.card-two {
+	width: 90%;
+	padding: 4rem;
+}
+
+.card-three {
+	width: 90%;
+	padding: 4rem;
+}
+
+.popular {
+	transform: scale(1.05);
+}
+
+@media screen and (min-width: 768px) {
+	.card-one {
+		max-width: 600px;
+		padding: 4rem;
+	}
+
+	.card-two {
+		max-width: 600px;
+		padding: 4rem;
+	}
+
+	.card-three {
+		max-width: 600px;
+		padding: 4rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.card-two:hover {
+		transform: scale(1.1);
+		transition: transform 1s;
+	}
+
+	.card-one:hover,
+	.card-three:hover {
+		transform: scale(1.05);
+		transition: transform 1s;
+	}
+}
+/* Card Block-----------------------------------------------End*/
