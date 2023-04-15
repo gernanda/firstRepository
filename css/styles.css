@@ -502,21 +502,6 @@ a {
 	align-items: center;
 }
 
-.grid__box-one {
-	background-color: gold;
-	height: 100px;
-}
-
-.grid__box-two {
-	background-color: dodgerblue;
-	height: 100px;
-}
-
-.grid__box-three {
-	background-color: violet;
-	height: 100px;
-}
-
 @media screen and (min-width: 768px) {
 	.grid--1x2 {
 		grid-template-columns: 1fr 1fr;
@@ -887,6 +872,33 @@ a {
 /* Card Block-----------------------------------------------End*/
 /* Feature Block-----------------------------------------------Start*/
 
-.wordpress-image {
+.feature__title {
+	margin-top: 1rem;
+}
+
+.feature .grid {
+	gap: 4rem 2rem;
+}
+
+.feature__image {
 	width: 100%;
 }
+
+.feature {
+	margin: 6rem 0;
+}
+
+.feature-block .header__content {
+	margin-bottom: 0;
+}
+
+.feature:first-of-type {
+	margin-top: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+	.feature__grid:nth-of-type(odd) .feature__content {
+		order: 2;
+	}
+}
+/* Feature Block-----------------------------------------------End*/
