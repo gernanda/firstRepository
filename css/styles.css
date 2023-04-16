@@ -625,6 +625,7 @@ a {
 }
 /* Callout--------------------------------------------------------End*/
 /* Collapsible----------------------------------------------------Start*/
+
 .collapsible__header {
 	display: flex;
 	align-items: center;
@@ -696,6 +697,14 @@ a {
 }
 
 .block--black .block__title {
+	color: white;
+}
+
+.block--black .collapsible__title {
+	color: white;
+}
+
+.block--black .list--tick {
 	color: white;
 }
 
@@ -962,3 +971,91 @@ a {
 	margin-bottom: 6rem;
 }
 /* BlockTestimonial--------------------------------------------End*/
+/* BlockFooter-------------------------------------------------Start*/
+.collapsible__bottom-line {
+	margin-top: 2rem;
+	margin-bottom: 4rem;
+	border: 1px solid white;
+	opacity: 0.5;
+}
+
+.block-footer--parallel {
+	padding-top: calc((var(--padding-vertical)) + 10rem);
+	padding-bottom: calc((var(--padding-vertical)) + 10rem);
+}
+
+.block-footer .list {
+	padding-left: 3rem;
+	opacity: 0.9;
+}
+
+.footer-logo-container {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 4rem 0 1rem;
+}
+
+.footer-logo-container > img {
+	max-width: 230px;
+}
+
+.copy-right {
+	text-align: center;
+	font-size: 2rem;
+	opacity: 0.5;
+	color: white;
+}
+
+.collapsible__content {
+	margin-bottom: 1.5rem;
+}
+
+.block-footer .collapsible {
+	width: 100%;
+	border-bottom: 1px solid #393939;
+	margin-bottom: 3rem;
+}
+
+.block-footer .collapsible__title {
+	font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+	.block-footer .grid {
+		grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+		justify-items: center;
+		align-items: normal;
+	}
+
+	.footer-logo-container {
+		order: -1;
+	}
+
+	.block-footer .collapsible__icon {
+		display: none;
+	}
+
+	.block-footer .collapsible__content {
+		max-height: 50vh;
+		opacity: 1;
+	}
+
+	.collapsible {
+		border-bottom: 0;
+	}
+
+	.footer-logo-container > img {
+		max-width: 180px;
+	}
+
+	.copy-right {
+		font-size: 1.5rem;
+	}
+
+	.block-footer .collapsible {
+		width: initial;
+	}
+}
+/* BlockFooter-------------------------------------------------End*/
