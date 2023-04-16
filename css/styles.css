@@ -1,10 +1,3 @@
-.bg-chienergizer {
-	background: url('../images/css-sprite-combined.png') 0px 0px;
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-}
-
 :root {
 	--color-primary: #1c77ef;
 	--color-secondary: #00d9ff;
@@ -23,6 +16,11 @@
 }
 
 /* Typography-----------------------------------------------------------Start*/
+
+::selection {
+	background: var(--color-primary);
+	color: white;
+}
 
 html {
 	font-size: 62.5%;
@@ -149,7 +147,6 @@ a {
 .list {
 	list-style: none;
 	padding-left: 0;
-	color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -160,6 +157,7 @@ a {
 .list--tick {
 	list-style-image: url(../images/tick.svg);
 	padding-left: 5rem;
+	color: var(--color-headings);
 }
 
 .list--tick .list__item {
@@ -902,3 +900,59 @@ a {
 	}
 }
 /* Feature Block-----------------------------------------------End*/
+/* Showcase----------------------------------------------------Start*/
+
+.showcase__picture > img {
+	width: 100%;
+}
+
+.showcase--trapezoid {
+	padding-top: calc((var(--padding-vertical)) + 10rem);
+	padding-bottom: calc((var(--padding-vertical)) + 10rem);
+}
+
+.showcase .media__title {
+	color: white;
+	font-size: 2.5rem;
+}
+
+.showcase p {
+	font-size: 2rem;
+}
+
+.showcase__grid {
+	margin: 8rem auto;
+}
+
+.showcase .grid {
+	justify-items: center;
+	align-items: center;
+	gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+	.showcase .grid--1x2 {
+		grid-template-columns: 50% 50%;
+	}
+
+	.showcase__picture > img {
+		width: auto;
+		max-width: 700px;
+	}
+
+	.showcase__content-image {
+		justify-self: end;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.showcase .media__title {
+		color: white;
+		font-size: 2rem;
+	}
+
+	.showcase p {
+		font-size: 1.5rem;
+	}
+}
+/* Showcase----------------------------------------------------End*/
